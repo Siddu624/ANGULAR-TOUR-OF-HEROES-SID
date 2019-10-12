@@ -11,8 +11,10 @@ import { PersonDashboardComponent } from './person-dashboard/person-dashboard.co
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
+import { ReactiveFormsModule } from '@angular/forms';
 import { PersonDetailComponent } from './person-detail/person-detail.component';
 import { ListPersonComponent } from './list-person/list-person.component';
+import { AddPersonComponent } from './add-person/add-person.component';
 
 @NgModule({
   declarations: [
@@ -23,13 +25,15 @@ import { ListPersonComponent } from './list-person/list-person.component';
     DashboardComponent,
     PersonDashboardComponent,
     PersonDetailComponent,
-    ListPersonComponent
+    ListPersonComponent,
+    AddPersonComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
-    HttpClientModule,
+    HttpClientModule
 // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
 // and returns simulated server responses.
 // Remove it when a real server is ready to receive requests.

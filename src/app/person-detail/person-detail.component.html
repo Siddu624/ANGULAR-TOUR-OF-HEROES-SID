@@ -6,5 +6,10 @@
             <input [(ngModel)]="person.name" placeholder="name"/>
           </label>
         </div>
+        <div>
+            <label>email:
+              <input [(ngModel)]="person.email" placeholder="email"/>
+            </label>
+          </div>
 </div>
-<button (click)="update()">save</button>
+<button type="button" class="btn btn-primary btn-lg" (click)="update()">Save</button>

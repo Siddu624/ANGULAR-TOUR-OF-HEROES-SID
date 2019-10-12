@@ -1,1 +1,29 @@
-<p>list-person works!</p>
+<!-- <div>
+        <label>Person name:
+          <input #personName >
+        </label>
+        <button (click)="add(personName.value); personName.value=''">
+          add
+        </button>
+</div> -->
+
+    <ul class="list-group">
+        <li *ngFor="let person of persons" class="list-group-item list-group-item-action">
+          <a routerLink="/persondetail/{{person.personId}}">
+            <span class="badge">{{person.id}}</span> {{person.name}}
+          </a>
+          <button type="button" (click)="delete(person)"class="close" aria-label="Close" >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </li>
+      </ul>
+      <div>
+      <button  class="btn btn-primary">
+          <a routerLink="/addperson">
+             Add New Person
+          </a>
+        </button>
+      </div>
+
+
+      

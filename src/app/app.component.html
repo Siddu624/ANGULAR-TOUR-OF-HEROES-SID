@@ -1,8 +1,26 @@
-<h1>{{title}}</h1>
-<nav>
+<h2>{{title}}</h2>
+<!-- <nav>
   <a routerLink="/dashboard">Dashboard</a>
   <a routerLink="/persondashboard">person-dashboard</a>
+  <a routerLink="/personlist">person-list</a>
   <a routerLink="/heroes">Heroes</a>
-</nav>
+</nav> -->
+<ul class="nav nav-pills">
+  <li class="nav-item">
+    <a class="nav-link active" routerLink="/dashboard">Dashboard</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLink="/persondashboard">person-dashboard</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLink="/personlist">person-list</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLink="/heroes">Heroes</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+  </li>
+</ul>
 <router-outlet></router-outlet>
 <app-messages></app-messages>

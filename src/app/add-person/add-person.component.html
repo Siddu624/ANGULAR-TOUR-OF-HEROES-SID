@@ -1,0 +1,25 @@
+<!-- <form [formGroup]="addPersonForm" (ngSubmit)="onSubmit()"> 
+    <label>
+      Name:
+      <input type="text" formControlName="name" required>
+    </label>
+  
+    <label>
+      Email
+      <input type="text" formControlName="email">
+    </label>
+
+  <button type="submit">Submit</button>
+</form> -->
+
+<form [formGroup]="addPersonForm" (ngSubmit)="onSubmit()"> 
+    <div class="form-group">
+        <label for="formGroupExampleInput">Name:</label>
+        <input type="text" class="form-control" formControlName="name" required placeholder="Example input">
+    </div>
+    <div class="form-group">
+        <label for="formGroupExampleInput2">Email</label>
+        <input type="text" class="form-control" formControlName="email" placeholder="Another input">
+    </div>
+    <button type="submit">Submit</button>
+  </form>
